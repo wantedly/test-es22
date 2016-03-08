@@ -1,0 +1,8 @@
+es1:
+  image: .
+  command: elasticsearch
+  environment:
+    - NODE_NAME=node1
+    - HOST_IP=192.168.99.100
+  ports:
+    - 9200
