@@ -42,6 +42,10 @@ RUN set -ex \
     chown -R elasticsearch:elasticsearch "$path"; \
   done
 
+RUN plugin install license
+RUN plugin install marvel-agent
+RUN plugin install analysis-kuromoji
+
 COPY config ./config
 
 VOLUME ./data
