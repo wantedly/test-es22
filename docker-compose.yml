@@ -1,5 +1,5 @@
 es1:
-  image: .
+  build: .
   command: elasticsearch
   environment:
     - NODE_NAME=node1
