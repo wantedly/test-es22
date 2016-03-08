@@ -1,9 +1,7 @@
-es1:
+es:
   build: .
   command: elasticsearch
-  environment:
-    - NODE_NAME=node1
-    - HOST_IP=192.168.99.100
+  volumes:
+    - /usr/share/elasticsearch/data
   ports:
-    - 9200
-    - 9300
+    - 9200:9200
