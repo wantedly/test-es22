@@ -10,5 +10,5 @@ Run
 ```sh
 $ docker-compose build
 $ docker-compose up
-$ open $(docker-machine ip $vm_name):9200/_plugin/head
+$ open "http://$(docker-machine ip $vm_name):9200/_plugin/head"
 ```
