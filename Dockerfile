@@ -1,4 +1,4 @@
-FROM elasticsearch:2.2
+FROM elasticsearch:2.2.1
 
 WORKDIR /usr/share/elasticsearch
 
